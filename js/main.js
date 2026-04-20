@@ -16,38 +16,48 @@ function updateNav() {
 window.addEventListener('scroll', updateNav, { passive: true });
 updateNav();
 
-/* --- Modal --- */
+/* ---------- 3. Lógica do Modal (Blindada e Otimizada) ---------- */
 const overlay = document.getElementById('modal');
 
+// O 'if (overlay)' garante que o código só rode se o modal estiver no HTML
 if (overlay) {
   const modalName   = document.getElementById('modal-name');
   const modalRole   = document.getElementById('modal-role');
   const modalBio    = document.getElementById('modal-bio');
   const modalAvatar = document.getElementById('modal-avatar');
-  const linksContainer = document.getElementById('modal-links');
+  const linksContainer = document.getElementById('modal-links'); // Pegamos o container aqui
 
   document.querySelectorAll('.js-modal-trigger').forEach(card => {
     card.addEventListener('click', e => {
       e.preventDefault();
+      
+      const name     = card.getAttribute('data-name');
+      const role     = card.getAttribute('data-role');
+      const bio      = card.getAttribute('data-bio');
+      const photo    = card.getAttribute('data-photo');
+      const initials = card.getAttribute('data-initials');
+      const linkedin = card.getAttribute('data-linkedin');
+      const github   = card.getAttribute('data-github');
+      const cv       = card.getAttribute('data-cv');
 
-      const { name, role, bio, photo, initials, linkedin, github, cv } = card.dataset;
-
-      if (modalName)   modalName.textContent   = name;
-      if (modalRole)   modalRole.textContent   = role;
-      if (modalBio)    modalBio.textContent    = bio;
-
-      if (modalAvatar) {
-        modalAvatar.innerHTML = (photo && photo !== 'null' && photo !== '')
-          ? `<img src="${photo}" alt="${name}">`
+      if(modalName) modalName.textContent = name;
+      if(modalRole) modalRole.textContent = role;
+      if(modalBio)  modalBio.textContent  = bio;
+      
+      if(modalAvatar) {
+        modalAvatar.innerHTML = (photo && photo !== "null" && photo !== "") 
+          ? `<img src="${photo}" alt="${name}">` 
           : `<span>${initials || ''}</span>`;
       }
 
+      // SÓ executa a lógica de links se o container existir nesta página
       if (linksContainer) {
-        linksContainer.innerHTML = [
-          linkedin && `<a href="${linkedin}" target="_blank" class="modal-link-btn btn-linkedin" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>`,
-          github   && `<a href="${github}"   target="_blank" class="modal-link-btn btn-github"   title="GitHub"><i class="fab fa-github"></i></a>`,
-          cv       && `<a href="${cv}"       target="_blank" class="modal-link-btn btn-cv"        title="Currículo PDF"><i class="fas fa-file-pdf"></i></a>`,
-        ].filter(Boolean).join('');
+        let linksHTML = ''; 
+        if (linkedin) linksHTML += `<a href="${linkedin}" target="_blank" class="modal-link-btn btn-linkedin" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>`;
+        if (github)   linksHTML += `<a href="${github}" target="_blank" class="modal-link-btn btn-github" title="GitHub"><i class="fab fa-github"></i></a>`;
+        if (cv)       linksHTML += `<a href="${cv}" target="_blank" class="modal-link-btn btn-cv" title="Currículo PDF"><i class="fas fa-file-pdf"></i></a>`;
+        
+        linksContainer.innerHTML = linksHTML;
       }
 
       overlay.classList.add('open');
@@ -55,6 +65,7 @@ if (overlay) {
     });
   });
 
+  /* Fechar modal */
   const closeModal = () => {
     overlay.classList.remove('open');
     document.body.style.overflow = '';
