@@ -4,20 +4,24 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>AeroFatec</title>
-  
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&display=swap" rel="stylesheet">
-  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
 <nav>
-  <a href="index.html" class="nav-logo">
-    <img src="img/logo-aerofatec.png" alt="AeroFatec Logo" style="height: 32px; width: auto;">
-</a>
+  <a href="index.html" class="nav-logo">AeroFatec<span> Santo André</span></a>
+
+  <button class="nav-toggle" aria-label="Abrir menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+
   <ul class="nav-links">
-    <li><a href="apoie.html">Apoie</a></li> 
+    <li><a href="apoie.html">Apoie</a></li>
     <li><a href="#">Projetos</a></li>
     <li><a href="equipe.html">Equipe</a></li>
     <li><a href="#">Notícias</a></li>
@@ -26,19 +30,38 @@
 </nav>
 
 <header class="hero-apple">
-    <div class="hero-content">
-      <h2 class="hero-kicker">Competição EletroQuad SAE BRASIL</h2>
-      <h1 class="hero-title">AeroFatec 2027</h1>
-      <p class="hero-subtitle">Engenharia levada ao limite. O drone definitivo projetado para rasgar o vento e dominar os céus.</p>
-      
-      <div class="hero-links">
-        <a href="#specs" class="btn-apple-primary">Descubra o projeto</a>
-        <a href="apoie.html" class="btn-apple-secondary">Apoie a equipe <span class="arrow">›</span></a>
+  <div class="hero-content">
+    <h2 class="hero-kicker">EletroQuad SAE BRASIL</h2>
+    <h1 class="hero-title">AeroFatec 2027</h1>
+    <p class="hero-subtitle">Engenharia levada ao limite. O drone definitivo projetado para rasgar o vento e dominar os céus.</p>
+
+    <div class="hero-links">
+      <a href="#specs" class="btn-apple-primary">Descubra o projeto</a>
+      <a href="apoie.html" class="btn-apple-secondary">Apoie a equipe <span class="arrow">›</span></a>
+    </div>
+  </div>
+
+  <section class="sponsors-section">
+    <p class="sponsors-title">Apoiado por líderes em engenharia e tecnologia</p>
+    <div class="marquee-wrapper">
+      <div class="marquee-track">
+        <div class="marquee-content">
+          <img src="img/sae-brasil.png" alt="SAE Brasil">
+          <img src="img/fatec.png" alt="FATEC">
+          <img src="img/empresa3.png" alt="Patrocinador 3">
+          <img src="img/empresa4.png" alt="Patrocinador 4">
+          <img src="img/empresa5.png" alt="Patrocinador 5">
+        </div>
+        <div class="marquee-content" aria-hidden="true">
+          <img src="img/sae-brasil.png" alt="SAE Brasil">
+          <img src="img/fatec.png" alt="FATEC">
+          <img src="img/empresa3.png" alt="Patrocinador 3">
+          <img src="img/empresa4.png" alt="Patrocinador 4">
+          <img src="img/empresa5.png" alt="Patrocinador 5">
+        </div>
       </div>
     </div>
-    
-    <img src="img/drone-hero.png" alt="Drone AeroFatec 2027" class="hero-image">
-  </header>
+  </section>
 
   <section id="specs" class="bento-section">
     <div class="bento-header text-center">
@@ -46,13 +69,12 @@
     </div>
 
     <div class="bento-grid">
-      
       <div class="bento-card span-2 dark-bento">
         <div class="bento-text">
           <h3>Aerodinâmica Impecável.</h3>
           <p>Chassi em fibra de carbono ultraleve otimizado em túnel de vento virtual para máxima eficiência de voo e resistência estrutural durante a competição.</p>
         </div>
-        <img src="FOTOS DO DRONNE" alt="Estrutura do Drone" class="bento-img-large">
+        <img src="img/drone.jpg" alt="Estrutura do Drone" class="bento-img-large">
       </div>
 
       <div class="bento-card light-bento">
@@ -60,7 +82,7 @@
           <h3>Força Bruta.</h3>
           <p>Motores brushless de alta rotação térmica, garantindo resposta instantânea.</p>
         </div>
-        <img src="VIDEO DO MOTOR FUNCIONANDO" alt="Motor Brushless" class="bento-img-small">
+        <img src="img/motor.jpg" alt="Motor Brushless" class="bento-img-small">
       </div>
 
       <div class="bento-card light-bento">
@@ -68,10 +90,12 @@
           <h3>Autonomia.</h3>
           <p>Baterias LiPo de alta descarga calculadas exatamente para os desafios do percurso.</p>
         </div>
-        <img src="COLOCAR FOTO DA BATERIA" alt="Bateria" class="bento-img-small">
+        <img src="img/bateria.png" alt="Bateria" class="bento-img-small">
       </div>
-
     </div>
   </section>
-  <script src="js/main.js" defer></script>
+</header>
+
+<script src="js/main.js"></script>
 </body>
+</html>

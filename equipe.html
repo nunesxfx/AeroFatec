@@ -4,11 +4,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>AeroFatec — Equipe</title>
-  
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&family=Montserrat:ital,wght@0,400;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
-
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -16,11 +16,8 @@
 <nav>
   <a href="index.html" class="nav-logo">AeroFatec<span> Santo André</span></a>
 
-  <!-- Botão hamburguer (só aparece no mobile via CSS) -->
   <button class="nav-toggle" aria-label="Abrir menu" aria-expanded="false">
-    <span></span>
-    <span></span>
-    <span></span>
+    <span></span><span></span><span></span>
   </button>
 
   <ul class="nav-links">
@@ -33,6 +30,7 @@
 </nav>
 
 <div class="page-content">
+
   <div class="breadcrumb">
     <a href="index.html">AeroFatec</a>
     <span>›</span>
@@ -43,7 +41,7 @@
     <h1>Equipe</h1>
   </div>
 
-  <!-- ========== INSTITUCIONAL ========== -->
+  <!-- Institucional -->
   <div class="vp-label">Institucional &amp; Orientação</div>
   <div class="vp-grid">
 
@@ -53,11 +51,11 @@
         data-initials="DF"
         data-photo="img/diretor.jpg"
         data-bio="Diretor da FATEC Santo André, apoiando e orientando o desenvolvimento tecnológico do projeto.">
-        <img class="vp-avatar" src="img/diretor.jpg" alt="Foto de Diretor" onerror="this.style.display='none'">
-        <div>
-          <div class="vp-name">Nome do Diretor</div>
-          <div class="vp-role">Diretor FATEC</div>
-        </div>
+      <img class="vp-avatar" src="img/diretor.jpg" alt="Foto do Diretor" onerror="this.style.display='none'">
+      <div>
+        <div class="vp-name">Nome do Diretor</div>
+        <div class="vp-role">Diretor FATEC</div>
+      </div>
     </a>
 
     <a class="vp-card js-modal-trigger"
@@ -66,11 +64,11 @@
         data-initials="CC"
         data-photo=""
         data-bio="Coordenador do Curso Sistemas Embarcados na FATEC Santo André, apoiando e orientando o desenvolvimento tecnológico do projeto.">
-        <div class="vp-avatar" style="display:flex;align-items:center;justify-content:center;font-family:var(--font-display);font-size:1.5rem;color:var(--accent);background:var(--accent-light);">CC</div>
-        <div>
-          <div class="vp-name">Nome do Coordenador</div>
-          <div class="vp-role">Coordenador do Curso</div>
-        </div>
+      <div class="vp-avatar vp-avatar--initials">CC</div>
+      <div>
+        <div class="vp-name">Nome do Coordenador</div>
+        <div class="vp-role">Coordenador do Curso</div>
+      </div>
     </a>
 
     <a class="vp-card js-modal-trigger"
@@ -79,16 +77,16 @@
         data-initials="PO"
         data-photo=""
         data-bio="Professor do Curso Sistemas Embarcados na FATEC Santo André, apoiando e orientando o desenvolvimento tecnológico do projeto.">
-        <div class="vp-avatar" style="display:flex;align-items:center;justify-content:center;font-family:var(--font-display);font-size:1.5rem;color:var(--accent);background:var(--accent-light);">PO</div>
-        <div>
-          <div class="vp-name">Nome do Professor</div>
-          <div class="vp-role">Professor Orientador</div>
-        </div>
+      <div class="vp-avatar vp-avatar--initials">PO</div>
+      <div>
+        <div class="vp-name">Nome do Professor</div>
+        <div class="vp-role">Professor Orientador</div>
+      </div>
     </a>
 
   </div>
 
-  <!-- ========== WEB ========== -->
+  <!-- Web -->
   <div class="vp-label">Desenvolvimento Web</div>
   <div class="vp-grid">
 
@@ -97,12 +95,15 @@
         data-role="Desenvolvedor Web"
         data-initials="BN"
         data-photo="img/brayan-nunes.jpg"
-        data-bio="Brayan foi o responsável pela arquitetura e criação do WebSite institucional da equipe AeroFatec.">
-        <img class="vp-avatar" src="img/brayan-nunes.jpg" alt="Foto de Brayan" onerror="this.style.display='none'">
-        <div>
-          <div class="vp-name">Brayan Nunes</div>
-          <div class="vp-role">Desenvolvedor Web</div>
-        </div>
+        data-bio="Brayan foi o responsável pela arquitetura e criação do WebSite institucional da equipe AeroFatec."
+        data-linkedin="https://www.linkedin.com/in/brayannunes"
+        data-github="https://github.com/nunesxfx"
+        data-cv="arquivos/cv-brayan.pdf">
+      <img class="vp-avatar" src="img/brayan-nunes.jpg" alt="Foto de Brayan" onerror="this.style.display='none'">
+      <div>
+        <div class="vp-name">Brayan Nunes</div>
+        <div class="vp-role">Desenvolvedor Web</div>
+      </div>
     </a>
 
     <a class="vp-card js-modal-trigger"
@@ -111,11 +112,11 @@
         data-initials="HM"
         data-photo="img/hugo-montoro.jpg"
         data-bio="Hugo atua no desenvolvimento do time de criação WEB, focando em performance e interface.">
-        <img class="vp-avatar" src="img/hugo-montoro.jpg" alt="Foto de Hugo" onerror="this.style.display='none'">
-        <div>
-          <div class="vp-name">Hugo Montoro</div>
-          <div class="vp-role">Desenvolvedor Web</div>
-        </div>
+      <img class="vp-avatar" src="img/hugo-montoro.jpg" alt="Foto de Hugo" onerror="this.style.display='none'">
+      <div>
+        <div class="vp-name">Hugo Montoro</div>
+        <div class="vp-role">Desenvolvedor Web</div>
+      </div>
     </a>
 
     <a class="vp-card js-modal-trigger"
@@ -124,16 +125,16 @@
         data-initials="FC"
         data-photo=""
         data-bio="Fernando integra o time de criação WEB, colaborando na implementação de novas funcionalidades.">
-        <div class="vp-avatar" style="display:flex;align-items:center;justify-content:center;font-family:var(--font-display);font-size:1.5rem;color:var(--accent);background:var(--accent-light);">FC</div>
-        <div>
-          <div class="vp-name">Fernando Coelho</div>
-          <div class="vp-role">Desenvolvedor Web</div>
-        </div>
+      <div class="vp-avatar vp-avatar--initials">FC</div>
+      <div>
+        <div class="vp-name">Fernando Coelho</div>
+        <div class="vp-role">Desenvolvedor Web</div>
+      </div>
     </a>
 
   </div>
 
-  <!-- ========== ELETRÔNICA ========== -->
+  <!-- Eletrônica -->
   <div class="vp-label">Eletrônica &amp; Hardware</div>
   <div class="vp-grid">
 
@@ -143,11 +144,11 @@
         data-initials="CTO"
         data-photo="img/wenderson-peruna.jpg"
         data-bio="Diretor de Engenharia responsável pela coordenação técnica do hardware do drone.">
-        <img class="vp-avatar" src="img/wenderson-peruna.jpg" alt="Foto de Wenderson" onerror="this.style.display='none'">
-        <div>
-          <div class="vp-name">Wenderson Peruna</div>
-          <div class="vp-role">Diretor de Engenharia</div>
-        </div>
+      <img class="vp-avatar" src="img/wenderson-peruna.jpg" alt="Foto de Wenderson" onerror="this.style.display='none'">
+      <div>
+        <div class="vp-name">Wenderson Peruna</div>
+        <div class="vp-role">Diretor de Engenharia</div>
+      </div>
     </a>
 
     <a class="vp-card js-modal-trigger"
@@ -156,11 +157,11 @@
         data-initials="TE1"
         data-photo="img/ariel-felipe.jpg"
         data-bio="Técnico de eletrônica responsável pelo desenvolvimento dos circuitos do projeto.">
-        <img class="vp-avatar" src="img/ariel-felipe.jpg" alt="Foto de Ariel" onerror="this.style.display='none'">
-        <div>
-          <div class="vp-name">Ariel Felipe</div>
-          <div class="vp-role">Técnico Eletrônica 1</div>
-        </div>
+      <img class="vp-avatar" src="img/ariel-felipe.jpg" alt="Foto de Ariel" onerror="this.style.display='none'">
+      <div>
+        <div class="vp-name">Ariel Felipe</div>
+        <div class="vp-role">Técnico Eletrônica 1</div>
+      </div>
     </a>
 
     <a class="vp-card js-modal-trigger"
@@ -169,16 +170,16 @@
         data-initials="TE2"
         data-photo="img/lucas-carvalho.jpg"
         data-bio="Técnico de eletrônica atuando no desenvolvimento e testes dos sistemas embarcados.">
-        <img class="vp-avatar" src="img/lucas-carvalho.jpg" alt="Foto de Lucas" onerror="this.style.display='none'">
-        <div>
-          <div class="vp-name">Lucas Carvalho</div>
-          <div class="vp-role">Técnico Eletrônica 2</div>
-        </div>
+      <img class="vp-avatar" src="img/lucas-carvalho.jpg" alt="Foto de Lucas" onerror="this.style.display='none'">
+      <div>
+        <div class="vp-name">Lucas Carvalho</div>
+        <div class="vp-role">Técnico Eletrônica 2</div>
+      </div>
     </a>
 
   </div>
 
-  <!-- ========== VISÃO COMPUTACIONAL ========== -->
+  <!-- Visão Computacional -->
   <div class="vp-label">Visão Computacional</div>
   <div class="vp-grid">
 
@@ -188,11 +189,11 @@
         data-initials="PS1"
         data-photo="img/gustavo-alves.jpg"
         data-bio="Pesquisador na área de visão computacional aplicada ao projeto de drone autônomo.">
-        <img class="vp-avatar" src="img/gustavo-alves.jpg" alt="Foto de Gustavo" onerror="this.style.display='none'">
-        <div>
-          <div class="vp-name">Gustavo Alves</div>
-          <div class="vp-role">Pesquisador 1</div>
-        </div>
+      <img class="vp-avatar" src="img/gustavo-alves.jpg" alt="Foto de Gustavo" onerror="this.style.display='none'">
+      <div>
+        <div class="vp-name">Gustavo Alves</div>
+        <div class="vp-role">Pesquisador 1</div>
+      </div>
     </a>
 
     <a class="vp-card js-modal-trigger"
@@ -201,11 +202,11 @@
         data-initials="PS2"
         data-photo=""
         data-bio="Pesquisador atuando em algoritmos de visão computacional para detecção de objetos.">
-        <div class="vp-avatar" style="display:flex;align-items:center;justify-content:center;font-family:var(--font-display);font-size:1.2rem;color:var(--accent);background:var(--accent-light);">PS2</div>
-        <div>
-          <div class="vp-name">Davy (completar sobrenome)</div>
-          <div class="vp-role">Pesquisador 2</div>
-        </div>
+      <div class="vp-avatar vp-avatar--initials">PS2</div>
+      <div>
+        <div class="vp-name">Davy (completar sobrenome)</div>
+        <div class="vp-role">Pesquisador 2</div>
+      </div>
     </a>
 
     <a class="vp-card js-modal-trigger"
@@ -214,16 +215,16 @@
         data-initials="PS3"
         data-photo=""
         data-bio="Pesquisador na área de visão computacional e processamento de imagens.">
-        <div class="vp-avatar" style="display:flex;align-items:center;justify-content:center;font-family:var(--font-display);font-size:1.2rem;color:var(--accent);background:var(--accent-light);">PS3</div>
-        <div>
-          <div class="vp-name">Gian (completar sobrenome)</div>
-          <div class="vp-role">Pesquisador 3</div>
-        </div>
+      <div class="vp-avatar vp-avatar--initials">PS3</div>
+      <div>
+        <div class="vp-name">Gian (completar sobrenome)</div>
+        <div class="vp-role">Pesquisador 3</div>
+      </div>
     </a>
 
   </div>
 
-  <!-- ========== FIRMWARE ========== -->
+  <!-- Firmware -->
   <div class="vp-label">Firmware &amp; Embarcados</div>
   <div class="vp-grid">
 
@@ -233,11 +234,11 @@
         data-initials="CTO"
         data-photo="img/gustavo-alves.jpg"
         data-bio="Diretor de Software responsável pela arquitetura do firmware do drone.">
-        <img class="vp-avatar" src="img/gustavo-alves.jpg" alt="Foto de Gustavo" onerror="this.style.display='none'">
-        <div>
-          <div class="vp-name">Gustavo Alves</div>
-          <div class="vp-role">Diretor de Software</div>
-        </div>
+      <img class="vp-avatar" src="img/gustavo-alves.jpg" alt="Foto de Gustavo" onerror="this.style.display='none'">
+      <div>
+        <div class="vp-name">Gustavo Alves</div>
+        <div class="vp-role">Diretor de Software</div>
+      </div>
     </a>
 
     <a class="vp-card js-modal-trigger"
@@ -246,11 +247,11 @@
         data-initials="ADF"
         data-photo="img/hugo-montoro.jpg"
         data-bio="Analista de firmware atuando no desenvolvimento do software embarcado do drone.">
-        <img class="vp-avatar" src="img/hugo-montoro.jpg" alt="Foto de Hugo" onerror="this.style.display='none'">
-        <div>
-          <div class="vp-name">Hugo Montoro</div>
-          <div class="vp-role">Analista de Firmware</div>
-        </div>
+      <img class="vp-avatar" src="img/hugo-montoro.jpg" alt="Foto de Hugo" onerror="this.style.display='none'">
+      <div>
+        <div class="vp-name">Hugo Montoro</div>
+        <div class="vp-role">Analista de Firmware</div>
+      </div>
     </a>
 
     <a class="vp-card js-modal-trigger"
@@ -259,16 +260,16 @@
         data-initials="AE"
         data-photo="img/lucas-mendonca.jpg"
         data-bio="Analista de sistemas embarcados responsável pela integração hardware-software.">
-        <img class="vp-avatar" src="img/lucas-mendonca.jpg" alt="Foto de Lucas" onerror="this.style.display='none'">
-        <div>
-          <div class="vp-name">Lucas Mendonça</div>
-          <div class="vp-role">Analista de Embarcados</div>
-        </div>
+      <img class="vp-avatar" src="img/lucas-mendonca.jpg" alt="Foto de Lucas" onerror="this.style.display='none'">
+      <div>
+        <div class="vp-name">Lucas Mendonça</div>
+        <div class="vp-role">Analista de Embarcados</div>
+      </div>
     </a>
 
   </div>
 
-  <!-- ========== MECÂNICA ========== -->
+  <!-- Mecânica -->
   <div class="vp-label">Mecânica de Voo &amp; Simulação</div>
   <div class="vp-grid">
 
@@ -278,11 +279,11 @@
         data-initials="CTO"
         data-photo=""
         data-bio="Diretor Técnico responsável pela área de mecânica de voo e simulação.">
-        <div class="vp-avatar" style="display:flex;align-items:center;justify-content:center;font-family:var(--font-display);font-size:1.2rem;color:var(--accent);background:var(--accent-light);">CTO</div>
-        <div>
-          <div class="vp-name">Arthur (completar sobrenome)</div>
-          <div class="vp-role">Diretor Técnico</div>
-        </div>
+      <div class="vp-avatar vp-avatar--initials">CTO</div>
+      <div>
+        <div class="vp-name">Arthur (completar sobrenome)</div>
+        <div class="vp-role">Diretor Técnico</div>
+      </div>
     </a>
 
     <a class="vp-card js-modal-trigger"
@@ -291,11 +292,11 @@
         data-initials="P1"
         data-photo="img/guilherme-feltrin.jpg"
         data-bio="Projetista responsável pela modelagem e simulação aerodinâmica do drone.">
-        <img class="vp-avatar" src="img/guilherme-feltrin.jpg" alt="Foto de Guilherme" onerror="this.style.display='none'">
-        <div>
-          <div class="vp-name">Guilherme Feltrin</div>
-          <div class="vp-role">Projetista 1</div>
-        </div>
+      <img class="vp-avatar" src="img/guilherme-feltrin.jpg" alt="Foto de Guilherme" onerror="this.style.display='none'">
+      <div>
+        <div class="vp-name">Guilherme Feltrin</div>
+        <div class="vp-role">Projetista 1</div>
+      </div>
     </a>
 
     <a class="vp-card js-modal-trigger"
@@ -304,11 +305,11 @@
         data-initials="P2"
         data-photo="img/vinicius-souza.jpg"
         data-bio="Projetista atuando no desenvolvimento estrutural e mecânico do drone.">
-        <img class="vp-avatar" src="img/vinicius-souza.jpg" alt="Foto de Vinicius" onerror="this.style.display='none'">
-        <div>
-          <div class="vp-name">Vinicius Souza</div>
-          <div class="vp-role">Projetista 2</div>
-        </div>
+      <img class="vp-avatar" src="img/vinicius-souza.jpg" alt="Foto de Vinicius" onerror="this.style.display='none'">
+      <div>
+        <div class="vp-name">Vinicius Souza</div>
+        <div class="vp-role">Projetista 2</div>
+      </div>
     </a>
 
     <a class="vp-card js-modal-trigger"
@@ -317,16 +318,16 @@
         data-initials="M1"
         data-photo="img/marcio-vitor.jpg"
         data-bio="Mecânico responsável pela montagem e manutenção física do drone.">
-        <img class="vp-avatar" src="img/marcio-vitor.jpg" alt="Foto de Marcio" onerror="this.style.display='none'">
-        <div>
-          <div class="vp-name">Marcio Vitor</div>
-          <div class="vp-role">Mecânico 1</div>
-        </div>
+      <img class="vp-avatar" src="img/marcio-vitor.jpg" alt="Foto de Marcio" onerror="this.style.display='none'">
+      <div>
+        <div class="vp-name">Marcio Vitor</div>
+        <div class="vp-role">Mecânico 1</div>
+      </div>
     </a>
 
   </div>
 
-  <!-- ========== GESTÃO ========== -->
+  <!-- Gestão -->
   <div class="vp-label">Gestão &amp; Marketing</div>
   <div class="vp-grid">
 
@@ -336,11 +337,11 @@
         data-initials="CMO"
         data-photo="img/lislie-mendes.jpg"
         data-bio="Diretora de Marketing responsável pela comunicação e identidade visual da equipe.">
-        <img class="vp-avatar" src="img/lislie-mendes.jpg" alt="Foto de Lislie" onerror="this.style.display='none'">
-        <div>
-          <div class="vp-name">Lislie Mendes</div>
-          <div class="vp-role">Diretora de Marketing</div>
-        </div>
+      <img class="vp-avatar" src="img/lislie-mendes.jpg" alt="Foto de Lislie" onerror="this.style.display='none'">
+      <div>
+        <div class="vp-name">Lislie Mendes</div>
+        <div class="vp-role">Diretora de Marketing</div>
+      </div>
     </a>
 
     <a class="vp-card js-modal-trigger"
@@ -349,11 +350,11 @@
         data-initials="COO"
         data-photo="img/lorena-garcia.jpg"
         data-bio="Diretora de Operações responsável pela gestão e logística da equipe.">
-        <img class="vp-avatar" src="img/lorena-garcia.jpg" alt="Foto de Lorena" onerror="this.style.display='none'">
-        <div>
-          <div class="vp-name">Lorena Garcia</div>
-          <div class="vp-role">Diretora de Operações</div>
-        </div>
+      <img class="vp-avatar" src="img/lorena-garcia.jpg" alt="Foto de Lorena" onerror="this.style.display='none'">
+      <div>
+        <div class="vp-name">Lorena Garcia</div>
+        <div class="vp-role">Diretora de Operações</div>
+      </div>
     </a>
 
     <a class="vp-card js-modal-trigger"
@@ -362,11 +363,11 @@
         data-initials="CFO"
         data-photo=""
         data-bio="Responsável pela gestão financeira e captação de recursos da equipe.">
-        <div class="vp-avatar" style="display:flex;align-items:center;justify-content:center;font-family:var(--font-display);font-size:1.2rem;color:var(--accent);background:var(--accent-light);">CFO</div>
-        <div>
-          <div class="vp-name">Nome do Responsável</div>
-          <div class="vp-role">Diretor(a) Financeiro</div>
-        </div>
+      <div class="vp-avatar vp-avatar--initials">CFO</div>
+      <div>
+        <div class="vp-name">Nome do Responsável</div>
+        <div class="vp-role">Diretor(a) Financeiro</div>
+      </div>
     </a>
 
   </div>
@@ -425,27 +426,27 @@
     </div>
     <div class="footer-bottom">
       <p>Copyright © 2026 AeroFatec. Todos os direitos reservados. — Projeto acadêmico criado para fins de estudo.</p>
-      <div class="footer-logo-small">AeroFatec<span style="color:var(--accent)"></span></div>
+      <div class="footer-logo-small">AeroFatec</div>
     </div>
   </footer>
 
 </div><!-- /.page-content -->
 
-  <!-- Modal -->
-  <div class="modal-overlay" id="modal">
-    <div class="modal">
-      <button class="modal-close js-modal-close">&#x2715;</button>
-      <div class="modal-header-flex">
-        <div class="modal-avatar" id="modal-avatar"></div>
-        <div class="modal-titles">
-          <div class="modal-name" id="modal-name"></div>
-          <div class="modal-role" id="modal-role"></div>
-        </div>
+<div class="modal-overlay" id="modal">
+  <div class="modal">
+    <button class="modal-close js-modal-close">&#x2715;</button>
+    <div class="modal-header-flex">
+      <div class="modal-avatar" id="modal-avatar"></div>
+      <div class="modal-titles">
+        <div class="modal-name" id="modal-name"></div>
+        <div class="modal-role" id="modal-role"></div>
+        <div id="modal-links" class="modal-links"></div>
       </div>
-      <p class="modal-bio" id="modal-bio"></p>
     </div>
+    <p class="modal-bio" id="modal-bio"></p>
   </div>
+</div>
 
-  <script src="js/main.js" defer></script>
+<script src="js/main.js" defer></script>
 </body>
 </html>
