@@ -1050,3 +1050,340 @@ footer {
         font-size: 1.3rem;
     }
 }
+
+/* ==========================================
+   PÁGINA DE PROJETOS (APPLE STYLE)
+========================================== */
+
+.projects-page {
+    background-color: #ffffff;
+    padding-top: var(--nav-h);
+}
+
+.projects-hero {
+    padding: 6rem 2rem;
+    text-align: center;
+}
+
+.hero-tag {
+    color: var(--accent);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+}
+
+.projects-hero h1 {
+    font-family: var(--font-display);
+    font-size: clamp(2.5rem, 8vw, 4rem);
+    font-weight: 700;
+    letter-spacing: -0.03em;
+}
+
+/* Blocos de Iteração */
+.project-iteration {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 4rem;
+    padding: 6rem 10%;
+    min-height: 80vh;
+}
+
+.project-iteration.reverse {
+    flex-direction: row-reverse;
+}
+
+.iteration-content {
+    flex: 1;
+    max-width: 500px;
+}
+
+.version-tag {
+    color: var(--muted);
+    font-size: 0.9rem;
+    font-weight: 600;
+    display: block;
+    margin-bottom: 1rem;
+}
+
+.iteration-content h2 {
+    font-family: var(--font-display);
+    font-size: 2.2rem;
+    line-height: 1.2;
+    margin-bottom: 1.5rem;
+    color: var(--text);
+}
+
+.iteration-content p {
+    font-family: var(--font-body);
+    font-size: 1.15rem;
+    line-height: 1.6;
+    color: var(--muted);
+}
+
+.iteration-media {
+    flex: 1.2;
+    border-radius: 24px;
+    overflow: hidden;
+    background-color: #f5f5f7;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.05);
+}
+
+.iteration-media img, 
+.iteration-media video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* Efeito de Surgimento (Fade In) */
+.reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s ease-out;
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Responsividade */
+@media (max-width: 968px) {
+    .project-iteration, 
+    .project-iteration.reverse {
+        flex-direction: column;
+        padding: 4rem 2rem;
+        text-align: center;
+    }
+    
+    .iteration-content {
+        max-width: 100%;
+    }
+}
+/* ==========================================
+   PÁGINA PATROCÍNIO (ESTILO APPLE PREMIUM)
+========================================== */
+
+.sponsor-page {
+    background-color: var(--bg);
+    padding-top: var(--nav-h);
+}
+
+.container-small {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+/* Hero Section */
+.sponsor-hero {
+    padding: 8rem 0 4rem;
+    text-align: center;
+    background-color: #ffffff;
+}
+
+.hero-tag {
+    color: var(--accent);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    font-size: 0.85rem;
+    display: block;
+    margin-bottom: 1.5rem;
+}
+
+.sponsor-hero h1 {
+    font-family: var(--font-display);
+    font-size: clamp(2.2rem, 6vw, 3.8rem);
+    font-weight: 700;
+    letter-spacing: -0.03em;
+    line-height: 1.1;
+    margin-bottom: 2rem;
+}
+
+.sponsor-hero p {
+    font-family: var(--font-body);
+    font-size: 1.25rem;
+    color: var(--muted);
+    line-height: 1.6;
+}
+
+/* Blocos Comparativos (Patrocínio vs Apoio) */
+.colab-models {
+    padding: 6rem 2rem;
+}
+
+.model-flex {
+    display: flex;
+    gap: 2.5rem;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.model-box {
+    flex: 1;
+    background: #ffffff;
+    padding: 3.5rem;
+    border-radius: 32px;
+    border: 1px solid var(--border);
+    transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    display: flex;
+    flex-direction: column;
+}
+
+.model-box.featured {
+    border: 2px solid var(--accent);
+    box-shadow: 0 20px 50px rgba(211, 47, 47, 0.08);
+}
+
+.model-header {
+    margin-bottom: 2rem;
+}
+
+.icon-circle {
+    width: 60px;
+    height: 60px;
+    background: var(--accent-light);
+    color: var(--accent);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.model-box h2 {
+    font-family: var(--font-display);
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.model-box p {
+    font-size: 1.05rem;
+    line-height: 1.6;
+    color: var(--muted);
+    margin-bottom: 2.5rem;
+}
+
+.model-list {
+    list-style: none;
+    margin-top: auto;
+}
+
+.model-list li {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 0.95rem;
+    margin-bottom: 1rem;
+    color: var(--text);
+}
+
+.model-list li i {
+    color: #2e7d32;
+    font-size: 0.8rem;
+}
+
+/* Grid de Contatos */
+.contact-grid-section {
+    padding-bottom: 8rem;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.section-title h2 {
+    font-family: var(--font-display);
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.contact-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1.5rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.contact-card {
+    background: #ffffff;
+    padding: 2.5rem 2rem;
+    border-radius: 24px;
+    text-decoration: none;
+    color: var(--text);
+    border: 1px solid var(--border);
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-card:hover {
+    transform: translateY(-8px);
+    border-color: var(--accent);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.05);
+}
+
+.card-icon {
+    font-size: 2rem;
+    color: var(--accent);
+    margin-bottom: 1.5rem;
+}
+
+.contact-card h3 {
+    font-family: var(--font-display);
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.contact-card p {
+    font-size: 0.9rem;
+    color: var(--muted);
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.card-action {
+    font-weight: 600;
+    font-size: 0.85rem;
+    color: var(--accent);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: auto;
+}
+
+/* Card Mídia Kit */
+.highlight-card {
+    background-color: var(--text);
+    color: white;
+    border: none;
+}
+
+.highlight-card .card-icon, 
+.highlight-card .card-action {
+    color: white;
+}
+
+.highlight-card p {
+    color: var(--subtle);
+}
+
+/* Responsividade Mobile */
+@media (max-width: 968px) {
+    .model-flex {
+        flex-direction: column;
+    }
+    
+    .model-box {
+        padding: 2.5rem;
+    }
+}

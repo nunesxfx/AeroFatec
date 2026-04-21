@@ -86,3 +86,18 @@ if (navToggle && navLinks) {
     navToggle.setAttribute('aria-expanded', isOpen);
   });
 }
+/* ---------- 4. Animação de Revelação ao Rolar ---------- */
+const observerOptions = {
+  threshold: 0.1 // Ativa quando 10% do elemento aparece
+};
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('active');
+    }
+  });
+}, observerOptions);
+
+// Aplica a observação em todos os blocos com a classe .reveal
+document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
